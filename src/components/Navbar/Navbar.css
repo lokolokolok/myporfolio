@@ -1,0 +1,127 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background: rgba(13, 12, 34, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(156, 39, 176, 0.7);
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin: 0;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #9c27b0, #3f51b5);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-menu a:hover::after,
+  .nav-menu a.active::after {
+    width: 100%;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background: rgba(13, 12, 34, 0.95);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+      backdrop-filter: blur(10px);
+    }
+  
+    .nav-menu.active {
+      right: 0;
+    }
+  
+    .nav-menu li {
+      margin: 20px 0;
+    }
+  
+    .menu-toggle.active span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+  
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.active span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
+  

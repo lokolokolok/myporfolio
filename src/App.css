@@ -1,0 +1,22 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  padding-top: 100px; /* Add space for fixed navbar */
+  padding-bottom: 40px; /* Add space before footer */
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 80px;
+  }
+}

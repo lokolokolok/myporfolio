@@ -1,0 +1,78 @@
+.flashing-image-container {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    margin: 0 auto;
+  }
+  
+  .flashing-image-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .flashing-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .visible {
+    opacity: 1;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
+  .image-border-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid #9c27b0;
+    animation: pulse 2s infinite;
+    pointer-events: none;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(156, 39, 176, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(156, 39, 176, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(156, 39, 176, 0);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .flashing-image-container {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .flashing-image-container {
+      width: 350px;
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .flashing-image-container {
+      width: 280px;
+      height: 280px;
+    }
+  }
+  

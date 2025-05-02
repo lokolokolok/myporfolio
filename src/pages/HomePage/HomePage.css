@@ -1,0 +1,134 @@
+.home-container {
+    min-height: calc(100vh - 165px); /* Adjusted for navbar and footer */
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 40px;
+  }
+  
+  .home-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .home-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
+  
+  .highlight {
+    background: linear-gradient(90deg, #9c27b0, #3f51b5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Ensure the text-shadow doesn't get clipped */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .home-text h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .home-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .home-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(45deg, #9c27b0, #3f51b5);
+    color: white;
+    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.4);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(156, 39, 176, 0.5);
+  }
+  
+  .btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(156, 39, 176, 0.7);
+  }
+  
+  .btn-outline:hover {
+    background: rgba(156, 39, 176, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  .home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 992px) {
+    .home-content {
+      flex-direction: column-reverse;
+      text-align: center;
+      gap: 40px;
+    }
+  
+    .home-text {
+      max-width: 100%;
+    }
+  
+    .home-buttons {
+      justify-content: center;
+    }
+  
+    .home-text h1 {
+      font-size: 3rem;
+    }
+  
+    .home-text h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-buttons {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .home-text h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
