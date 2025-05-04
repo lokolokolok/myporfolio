@@ -4,30 +4,30 @@ const ExperiencePage = () => {
   const experiences = [
     {
       id: 1,
-      company: "Creative Minds Group",
-      role: "Junior Software Engineer",
-      period: "Jan 2023 - Present",
+      company: "Langhub: A Mobile-Based Language Support Application For Chinese Mandarin And Spanish Language",
+      role: "System Analyst",
+      period: "June 2024 - March 2025",
       description:
-        "Working on front-end development using React and Next.js. Collaborating with the design team to implement responsive and accessible user interfaces.",
-      skills: ["React", "Next.js", "JavaScript", "CSS", "Git"],
+        "Langhub is a mobile-based language support application designed to assist users in learning and practicing Chinese Mandarin and Spanish languages. The app offers interactive lessons, vocabulary exercises, and real-time language translation features. Users can engage in language exchange with native speakers, enhancing their conversational skills. Langhub aims to bridge language barriers and promote cultural exchange through its user-friendly interface and comprehensive language resources.",
+       skills: ["Dart", "Flutter" , "google API" ],
     },
     {
       id: 2,
-      company: "Tech Solutions Inc.",
-      role: "Web Development Intern",
-      period: "Jun 2022 - Dec 2022",
+      company: "LinkyTech: WMSU - CCSPE - Digital Scoring System (Arnis, Volleyball, Table Tennis)",
+      role: "System Analyst",
+      period: "Jan 2024 - Jan 2025",
       description:
-        "Assisted in developing and maintaining company websites. Learned about modern web development practices and worked on optimizing website performance.",
-      skills: ["HTML", "CSS", "JavaScript", "WordPress"],
+        "Welcome to LinkyTech, where our commitment to excellence is reflected in our name Link and Technology. As specialists in technology-driven solutions, LinkyTech is a small local company consist of IT experts that serves as a pivotal link, facilitating seamless connections between businesses and their client through the development of tailored web applications. Our expertise lies in creating sophisticated online platforms to address the unique requirements of each business we partner with. Beyond the realm of technology, our focus extends to fostering effective communication and collaboration between businesses and their customers. As a dedicated technology partner, LinkyTech is poised to elevate your digital presence, ensuring that your business/organization navigates the online landscape with efficiency, sophistication, and a commitment to meaningful connections. ",
+      skills: ["javascript", "html", "database"],
     },
     {
       id: 3,
-      company: "Digital Arts Academy",
-      role: "Graphic Design Assistant",
-      period: "Jan 2022 - May 2022",
+      company: "VerdeVista NurtureHub: Ecommerce Website",
+      role: "Frontend Developer",
+      period: "Jan 2024 - Dec 2024",
       description:
-        "Supported senior designers in creating visual assets for digital platforms. Gained experience in translating design concepts into web-friendly formats.",
-      skills: ["Photoshop", "Illustrator", "UI Design", "Typography"],
+        "Welcome to VerdeVistaNurtureHub, your premier destination for cultivating a vibrant and thriving garden all year round. At VerdeVista, we take pride in curating and exquisite selection of plants and flowers that are not only tailored to thrive in the current season and Good for profit as well. ",
+      skills: ["phyton", "php", "html", "css"],
     },
   ]
 
@@ -41,8 +41,8 @@ const ExperiencePage = () => {
             <div key={exp.id} className="experience-card content-container">
               <div className="experience-period">{exp.period}</div>
               <div className="experience-details">
-                <h2 className="experience-role text-outline">{exp.role}</h2>
-                <h3 className="experience-company">{exp.company}</h3>
+                <h2 className="experience-company text-outline">{exp.company}</h2>
+                <h3 className="experience-role">{exp.role}</h3>
                 <p className="experience-description">{exp.description}</p>
                 <div className="experience-skills">
                   {exp.skills.map((skill, i) => (
