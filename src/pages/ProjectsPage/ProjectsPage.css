@@ -1,153 +1,315 @@
 .projects-page-container {
-    min-height: calc(100vh - 165px);
-    padding: 0 30px;
-  }
-  
-  .projects-page-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  
-  .projects-page-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .projects-intro {
-    text-align: center;
-    margin-bottom: 40px;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1.2rem;
-  }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-  }
-  
-  .project-card {
-    background: rgba(13, 12, 34, 0.5);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    height: 100%;
-    display: flex;
+  min-height: calc(100vh - 165px);
+  padding: 0 30px;
+}
+
+.projects-page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.projects-page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.projects-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+}
+
+/* Project Filters */
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: rgba(13, 12, 34, 0.5);
+  border: 1px solid rgba(156, 39, 176, 0.3);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: rgba(156, 39, 176, 0.2);
+  transform: translateY(-3px);
+}
+
+.filter-btn.active {
+  background: linear-gradient(45deg, #9c27b0, #3f51b5);
+  border-color: transparent;
+  box-shadow: 0 5px 15px rgba(156, 39, 176, 0.4);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(13, 12, 34, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(156, 39, 176, 0.3);
+}
+
+.project-image {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 12, 34, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-link {
+  background: linear-gradient(45deg, #9c27b0, #3f51b5);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(156, 39, 176, 0.4);
+}
+
+.project-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.tech-tag {
+  background: rgba(63, 81, 181, 0.2);
+  border: 1px solid #3f51b5;
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(63, 81, 181, 0.4);
+}
+
+/* Project Modal */
+.project-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.project-modal {
+  background: rgba(13, 12, 34, 0.95);
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  border-radius: 15px;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 50px rgba(156, 39, 176, 0.5);
+}
+
+.modal-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.modal-image {
+  width: 50%;
+  height: auto;
+  min-height: 400px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.modal-content {
+  padding: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #9c27b0, #3f51b5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(156, 39, 176, 0.3);
+}
+
+.modal-description {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.modal-technologies {
+  margin-bottom: 30px;
+}
+
+.modal-technologies h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.modal-links {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.modal-link {
+  background: linear-gradient(45deg, #9c27b0, #3f51b5);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.modal-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(156, 39, 176, 0.4);
+}
+
+@media (max-width: 992px) {
+  .modal-content-wrapper {
     flex-direction: column;
   }
-  
-  .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(156, 39, 176, 0.3);
-  }
-  
-  .project-image {
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .project-image img {
+
+  .modal-image,
+  .modal-content {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
   }
-  
-  .project-card:hover .project-image img {
-    transform: scale(1.1);
+
+  .modal-image {
+    height: 300px;
   }
-  
-  .project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(13, 12, 34, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .project-modal {
+    width: 95%;
   }
-  
-  .project-card:hover .project-overlay {
-    opacity: 1;
-  }
-  
-  .project-links {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .project-link {
-    background: linear-gradient(45deg, #9c27b0, #3f51b5);
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    text-decoration: none;
-  }
-  
-  .project-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(156, 39, 176, 0.4);
-  }
-  
-  .project-content {
-    padding: 20px;
-    flex-grow: 1;
-    display: flex;
+
+  .modal-links {
     flex-direction: column;
   }
-  
-  .project-title {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #fff;
+
+  .modal-title {
+    font-size: 1.8rem;
   }
-  
-  .project-description {
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 15px;
-    line-height: 1.6;
-    flex-grow: 1;
-  }
-  
-  .project-technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: auto;
-  }
-  
-  .tech-tag {
-    background: rgba(63, 81, 181, 0.2);
-    border: 1px solid #3f51b5;
-    padding: 3px 10px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    transition: all 0.3s ease;
-  }
-  
-  .tech-tag:hover {
-    background: rgba(63, 81, 181, 0.4);
-  }
-  
-  @media (max-width: 768px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .projects-page-title {
-      font-size: 2.5rem;
-    }
-  }
-  
+}
