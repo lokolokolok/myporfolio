@@ -55,6 +55,8 @@ import imgday8 from "../../assets/day8.jpg"
 import imgday8_2 from "../../assets/day8_2.jpg"
 import imgday8_3 from "../../assets/day8_3.jpg"
 import imgday8_4 from "../../assets/day8_4.jpg"
+import imgday8_5 from "../../assets/day8_1.jpg"
+import imgday8_6 from "../../assets/day8_5.jpg"
 
 const BlogPage = () => {
   const [selectedBlog, setSelectedBlog] = useState(null)
@@ -150,7 +152,7 @@ const BlogPage = () => {
     },
     {
       id: 4,
-      title: "Day 4: From Minting Millions to Mixed Realities — A Day of Currency and Cutting-Edge Tech",
+      title: "Day 4: From Minting Millions to Mixed Realities A Day of Currency and Cutting-Edge Tech",
       date: "April 10, 2025",
       excerpt:
         "Day 4 began just like the others with a hearty breakfast at 6 a.m. The food, once again, didn't disappoint. With satisfied tummies and ...",
@@ -192,19 +194,19 @@ const BlogPage = () => {
         Upon arrival, a representative from LRTA warmly welcomed us and gave us a briefing. We learned that the LRTA is a government-owned corporation responsible for the construction, operation, and maintenance of light rail systems like Line 2. We were then taken around the facility for a full tour.
         </p>
         
-        <p>One of the first safety facts shared with us was about umbrellas—apparently, they are not advisable inside stations. Why? Because if one accidentally gets dragged into the overhead lines—which carry anywhere from 230V to 400,000V—it could lead to dangerous power interruptions. Shutting down power just to remove something as small as an umbrella could disrupt train operations and inconvenience hundreds of passengers. That really put into perspective how every little detail in public transport matters.</p>
+        <p>One of the first safety facts shared with us was about umbrellas apparently, they are not advisable inside stations. Why? Because if one accidentally gets dragged into the overhead lines which carry anywhere from 230V to 400,000V it could lead to dangerous power interruptions. Shutting down power just to remove something as small as an umbrella could disrupt train operations and inconvenience hundreds of passengers. That really put into perspective how every little detail in public transport matters.</p>
         
         <p>We then explored different sections of the LRTA facility, including maintenance areas and emergency response systems. One particularly interesting segment was about how they recover a train stuck mid-track—using a special tugger train to safely tow it out, preventing passengers from having to step onto the tracks.</p>
         
-        <p>Then came another cool learning moment: why are there rocks along the tracks? They're called track ballast, and they're essential for track stability, support, and proper drainage—all crucial for the safety and smooth running of the train system. A fun surprise? Part of the Shake, Rattle & Roll film series was shot there! That definitely added a pop-culture twist to our educational tour.</p>
+        <p>Then came another cool learning moment: why are there rocks along the tracks? They're called track ballast, and they're essential for track stability, support, and proper drainage all crucial for the safety and smooth running of the train system. A fun surprise? Part of the Shake, Rattle & Roll film series was shot there! That definitely added a pop-culture twist to our educational tour.</p>
         
         <p>We also got to peek inside the control room, where staff work around the clock to monitor and manage train operations. Seeing how every train movement was precisely tracked made me appreciate how complex yet efficient our transport systems really are.
         Then came the moment I had been waiting for: riding the train! As expected, it did not disappoint. That first ride was a mix of thrill, curiosity, and satisfaction—I couldn't stop smiling.
         </p>
 
-        <p>Afterward, we headed back to the dorm for lunch and a much-needed rest. But the day was far from over.</p>
+        <p>Afterward, we headed back to the dorm for lunch and a much needed rest. But the day was far from over.</p>
         
-        <p>In the afternoon, we were off again—this time to the Traffic Engineering Center, which also served as the first destination for Bus B. The building itself was tall and modern, and looking out from one of the high floors was already an experience in itself.</p>
+        <p>In the afternoon, we were off again this time to the Traffic Engineering Center, which also served as the first destination for Bus B. The building itself was tall and modern, and looking out from one of the high floors was already an experience in itself.</p>
         
         <p>We were welcomed into their meeting room, where a representative presented the company's background. They specialize in traffic engineering, planning, and even forensic traffic investigation, offering reliable and technically sound consultancy services. It was fascinating to see how their work directly impacts public safety and urban mobility.</p>
         
@@ -212,32 +214,32 @@ const BlogPage = () => {
         
         <p>With a mix of reflection and newfound knowledge, we boarded our bus back to the dorm. Dinner followed shortly after, and though the day had been full, our energy wasn't quite drained yet. So, we decided to cap off the night with a fun karaoke session—singing our hearts out before finally calling it a night. We had to sleep early, after all, since Day 6 would start at 1 a.m.</p>
      
-        <p>And just like that, Day 5 came to a close, memorable as ever—filled with firsts, facts, and a deeper appreciation for the systems that move and protect us.</p>
+        <p>And just like that, Day 5 came to a close, memorable as ever filled with firsts, facts, and a deeper appreciation for the systems that move and protect us.</p>
          
         `,
-      images: [imgday5, imgday5_2, imgday5_3, imgday5_4, imgday5_5, imgday5_6],
+      images: [imgday5, imgday5_2, imgday5_3, imgday5_4, imgday5_6, imgday5_5],
       institution: "WESTERN MINDANAO STATE UNIVERSITY",
       program: "INFORMATION TECHNOLOGY EDUCATIONAL FIELDTRIP AND SEMINAR",
       category: "Transportation",
     },
     {
       id: 6,
-      title: "Day 6: Breezes, Beliefs, and Breathtaking Views — Baguio Bound",
+      title: "Day 6: Breezes, Beliefs, and Breathtaking Views Baguio Bound",
       date: "April 12, 2025",
       excerpt:
-        "Day 6 kicked off before the sun could even think of rising—we woke up at 12 a.m., drowsy but excited, and boarded our buses for the much-anticipated trip to Baguio City. Our departure time was set at 1 a.m...",
+        "Day 6 kicked off before the sun could even think of rising we woke up at 12 a.m., drowsy but excited, and boarded our buses for the much-anticipated trip to Baguio City. Our departure time was set at 1 a.m...",
       content: `
-        <p>Day 6 kicked off before the sun could even think of rising—we woke up at 12 a.m., drowsy but excited, and boarded our buses for the much-anticipated trip to Baguio City. Our departure time was set at 1 a.m., with an estimated travel time of around six hours. Naturally, we all dozed off inside the cold, air-conditioned bus, waking only during our two bus stops for bathroom breaks.</p>
+        <p>Day 6 kicked off before the sun could even think of rising we woke up at 12 a.m., drowsy but excited, and boarded our buses for the much-anticipated trip to Baguio City. Our departure time was set at 1 a.m., with an estimated travel time of around six hours. Naturally, we all dozed off inside the cold, air-conditioned bus, waking only during our two bus stops for bathroom breaks.</p>
         
         <p>At exactly 6 a.m., we arrived in the heart of Baguio—and wow, it instantly lived up to its nickname as the "Summer Capital of the Philippines." Stepping out of the bus felt like walking into a giant air-conditioned room—but better, because it came with the fresh scent of pine trees and cool mountain breeze. The morning chill was refreshing, and we instantly knew this was going to be a day to remember.</p>
         
         <p>Our first stop was the Strawberry Farm, though since it was still early, the actual farm area hadn't opened yet. Fortunately, nearby shops were open, welcoming tourists with souvenirs and food. We shopped, snapped photos, and, of course, tried the famous strawberry taho—a local twist on a classic snack that turned out to be incredibly delicious!</p>
         
-        <p>Next, we made our way to the Chinese Bell Church, and along the road, our ever-enthusiastic tour guide filled us with fun facts. We learned that Baguio earned its title due to its elevated location and lush greenery, offering a cool escape from the country's usual heat. As we passed the Valley of Colors, the guide told us it was inspired by the favelas of Rio de Janeiro and the Gamcheon Cultural Village of Korea—a wonderful mix of global inspirations turned local gem.</p>
+        <p>Next, we made our way to the Chinese Bell Church, and along the road, our ever enthusiastic tour guide filled us with fun facts. We learned that Baguio earned its title due to its elevated location and lush greenery, offering a cool escape from the country's usual heat. As we passed the Valley of Colors, the guide told us it was inspired by the favelas of Rio de Janeiro and the Gamcheon Cultural Village of Korea—a wonderful mix of global inspirations turned local gem.</p>
         
-        <p>At the Bell Church, we were told something really fascinating: the temple honors five patron saints, each representing Taoism, Confucianism, Islam, Christianity, and Buddhism. That strong message of interfaith unity was humbling. We climbed stairs, took in panoramic views of colorful mountain-side homes, and even made wishes at the wishing well—it was equal parts fun and spiritual.After that, we checked into our Baguio hotel, finally getting a chance to rest and eat breakfast. But our exploration was far from over.</p>
+        <p>At the Bell Church, we were told something really fascinating: the temple honors five patron saints, each representing Taoism, Confucianism, Islam, Christianity, and Buddhism. That strong message of interfaith unity was humbling. We climbed stairs, took in panoramic views of colorful mountain-side homes, and even made wishes at the wishing well it was equal parts fun and spiritual.After that, we checked into our Baguio hotel, finally getting a chance to rest and eat breakfast. But our exploration was far from over.</p>
         
-        <p>Next up was the Philippine Military Academy. Before heading in, we were briefed on the rules: what not to wear and how to behave, given that it's a military training institution. Upon arrival, we were greeted by stalls selling souvenirs and goods, and the entire place had a peaceful yet prestigious vibe. We wandered around, took photos, and soaked in the fresh air—the view and breeze there were simply unmatched.</p>
+        <p>Next up was the Philippine Military Academy. Before heading in, we were briefed on the rules: what not to wear and how to behave, given that it's a military training institution. Upon arrival, we were greeted by stalls selling souvenirs and goods, and the entire place had a peaceful yet prestigious vibe. We wandered around, took photos, and soaked in the fresh air the view and breeze there were simply unmatched.</p>
         
         <p>Then it was back to the hotel for lunch and a short rest. Not long after, we were off again, this time to The Mansion House, the official summer residence of the President of the Philippines. The guide gave us a brief history lesson: the Mansion has hosted significant events, including sessions of the Philippine Legislature and serving as home to the first American High Commissioner. The grand gate and elegant façade made it the perfect photo backdrop.</p>
         
@@ -245,9 +247,9 @@ const BlogPage = () => {
         
         <p>Once we reached the Observation Deck, the view was nothing short of breathtaking. We rented binoculars to spot the old mines and took tons of photos. With the high-altitude scenery and cool wind, it felt like we were in another world entirely.</p>
         
-        <p>As the sun began to set, we returned to our buses and headed back to the hotel for dinner. But the day wasn't over yet—after eating, we went out once more to explore the famous Baguio Night Market. The place was buzzing with energy—crowds, colorful lights, rows of bargains, and unique finds at every corner. We shopped to our hearts' content, satisfied with both the experience and our purchases.</p>
+        <p>As the sun began to set, we returned to our buses and headed back to the hotel for dinner. But the day wasn't over yet—after eating, we went out once more to explore the famous Baguio Night Market. The place was buzzing with energy crowds, colorful lights, rows of bargains, and unique finds at every corner. We shopped to our hearts' content, satisfied with both the experience and our purchases.</p>
      
-        <p>And with that, Day 6 ended—cold air, warm memories, and bags full of souvenirs in tow.</p>
+        <p>And with that, Day 6 ended cold air, warm memories, and bags full of souvenirs in tow.</p>
         
         `,
       images: [imgday6, imgday6_2, imgday6_3, imgday6_4, imgday6_5, imgday6_6],
@@ -262,17 +264,17 @@ const BlogPage = () => {
       excerpt:
         "I woke up on Day 7 feeling unusually at peace. The bed was warm and cozy, the room was quiet, and as I opened the window, a gentle breeze welcomed me...",
       content: `
-        <p>I woke up on Day 7 feeling unusually at peace. The bed was warm and cozy, the room was quiet, and as I opened the window, a gentle breeze welcomed me—cool, refreshing, and distinctly Baguio. It was my first time staying in a hotel, and I found myself silently appreciating the little luxuries, like soft pillows and the serene mountain air. It was a simple yet memorable morning.</p>
+        <p>I woke up on Day 7 feeling unusually at peace. The bed was warm and cozy, the room was quiet, and as I opened the window, a gentle breeze welcomed me cool, refreshing, and distinctly Baguio. It was my first time staying in a hotel, and I found myself silently appreciating the little luxuries, like soft pillows and the serene mountain air. It was a simple yet memorable morning.</p>
         
-        <p>At 7 a.m., we had breakfast, and for the first time in days, we were given the entire morning to ourselves. Some of my classmates decided to visit Burnham Park, but my partner and I had other plans. We set off on foot to SM Baguio, and even though the sun was already high in the sky, the walk was cool and pleasant—so unlike the heat we're used to. It was a strange but welcome feeling.</p>
+        <p>At 7 a.m., we had breakfast, and for the first time in days, we were given the entire morning to ourselves. Some of my classmates decided to visit Burnham Park, but my partner and I had other plans. We set off on foot to SM Baguio, and even though the sun was already high in the sky, the walk was cool and pleasant so unlike the heat we're used to. It was a strange but welcome feeling.</p>
         
-        <p>The most fascinating part? SM Baguio doesn't even use air conditioning—yet it feels like it does. The mall's open design and Baguio's naturally cold climate work together in perfect harmony. We spent the morning exploring, taking pictures, window shopping, and simply soaking in every moment of our last day in this mountain paradise.</p>
+        <p>The most fascinating part? SM Baguio doesn't even use air conditioning yet it feels like it does. The mall's open design and Baguio's naturally cold climate work together in perfect harmony. We spent the morning exploring, taking pictures, window shopping, and simply soaking in every moment of our last day in this mountain paradise.</p>
         
-        <p>As the sun crept higher, we returned to the hotel for lunch and started packing our things. It felt too soon. Like Baguio was just starting to open up to us, and suddenly we had to go. When it was finally time to leave, we boarded our bus with bags full of souvenirs and hearts heavy with the weight of farewell. As we pulled away from the city, everyone waved their own quiet goodbyes—some smiling, some just staring out the window in thoughtful silence.</p>
+        <p>As the sun crept higher, we returned to the hotel for lunch and started packing our things. It felt too soon. Like Baguio was just starting to open up to us, and suddenly we had to go. When it was finally time to leave, we boarded our bus with bags full of souvenirs and hearts heavy with the weight of farewell. As we pulled away from the city, everyone waved their own quiet goodbyes some smiling, some just staring out the window in thoughtful silence.</p>
         
         <p>We arrived back at the dorm around nightfall. Some of our classmates still had enough energy to venture out and explore parts of Manila for one last time. But for those of us who stayed behind, we shared dinner and a few final conversations. We laughed, talked about the trip, clinked a few drinks together, and took in the final stretch of our journey.</p>
         
-        <p>As I laid in bed that night, I couldn't help but feel a bittersweet mix of emotions. It was our last night in the dorm—the same dorm that had become a second home in just a few days. Everything felt like a blur. From the excitement of Day 1 to the cool winds of Baguio and now, this quiet ending. It really did feel like the whole experience flew by in a flash.</p>
+        <p>As I laid in bed that night, I couldn't help but feel a bittersweet mix of emotions. It was our last night in the dorm the same dorm that had become a second home in just a few days. Everything felt like a blur. From the excitement of Day 1 to the cool winds of Baguio and now, this quiet ending. It really did feel like the whole experience flew by in a flash.</p>
         
         <p>And just like that, Day 7 came to a close—a quiet, reflective end to a loud, fun, and unforgettable adventure.</p>
         
@@ -289,22 +291,22 @@ const BlogPage = () => {
       excerpt:
         "The final day of our OJT tour began with a simple breakfast that somehow felt different. As we quietly ate, there was a feeling of contentment and closure in the air...",
       content: `
-        <p>The final day of our OJT tour began with a simple breakfast that somehow felt different. As we quietly ate, there was a feeling of contentment and closure in the air. Each bite was a reminder of the warmth and hospitality we'd experienced throughout our stay. We had grown used to this dorm, this routine, this temporary life away from home—and now, it was time to say goodbye.</p>
+        <p>The final day of our OJT tour began with a simple breakfast that somehow felt different. As we quietly ate, there was a feeling of contentment and closure in the air. Each bite was a reminder of the warmth and hospitality we'd experienced throughout our stay. We had grown used to this dorm, this routine, this temporary life away from home and now, it was time to say goodbye.</p>
         
         <p>We packed our things carefully, making sure no memory was left behind. As we boarded the bus, I took one last look at the dorm, the place that sheltered us during our Manila adventure. I thanked the staff who had taken care of us and turned away with a quiet smile, taking my seat as the engine roared to life.</p>
         
         <p>As we traveled down the Expressway, the city slowly unfolded in reverse—the landmarks we visited, the streets we walked, and even places we never got the chance to explore. All of it blended into a final scenic reminder of how far we'd come. Closer to the airport, our tour guide bid us farewell, and we made sure to thank him for his stories, guidance, and the energy he carried throughout the trip.</p>
         
-        <p>At the airport, we said our last goodbye to the DJM Tours and Travel Service crew, who played such a big part in making this experience safe and memorable. While waiting for our flight, we opened our packed lunch, and as I took the final bite, I realized just how much I appreciated the food they lovingly prepared for us every day. It wasn't just the flavor—it was the feeling of being cared for.</p>
+        <p>At the airport, we said our last goodbye to the DJM Tours and Travel Service crew, who played such a big part in making this experience safe and memorable. While waiting for our flight, we opened our packed lunch, and as I took the final bite, I realized just how much I appreciated the food they lovingly prepared for us every day. It wasn't just the flavor it was the feeling of being cared for.</p>
         
         <p>Once aboard the plane, as the aircraft took off, I found myself waving silently at the window, saying goodbye to Manila in my own quiet way. A flood of memories rushed in—laughter, bus rides, city lights, cold breezes in Baguio, and the thrill of learning something new each day. It was a bittersweet moment—one filled with deep satisfaction and a hint of longing.</p>
         
-        <p>When we finally landed in Zamboanga, the sight of familiar faces waiting to welcome us back warmed my heart. We were home. I hugged my family tight and reunited with my pets, their excitement making me laugh. And as I lay back in my own bed that night, I couldn't help but reflect: the OJT tour was finally over. It felt like a dream—one filled with knowledge, friendship, first times, and unforgettable memories.</p>
+        <p>When we finally landed in Zamboanga, the sight of familiar faces waiting to welcome us back warmed my heart. We were home. I hugged my family tight and reunited with my pets, their excitement making me laugh. And as I lay back in my own bed that night, I couldn't help but reflect: the OJT tour was finally over. It felt like a dream one filled with knowledge, friendship, first times, and unforgettable memories.</p>
         
-        <p>With that, Day 8—and our unforgettable journey—came to an end.</p>
+        <p>With that, Day 8 and our unforgettable journey came to an end.</p>
         
       `,
-      images: [imgday8, imgday8_2, imgday8_3, imgday8_4, imgday8, imgday8_2],
+      images: [imgday8_5, imgday8_2, imgday8_3, imgday8_4, imgday8, imgday8_6],
       institution: "WESTERN MINDANAO STATE UNIVERSITY",
       program: "INFORMATION TECHNOLOGY EDUCATIONAL FIELDTRIP AND SEMINAR",
       category: "Reflection",
