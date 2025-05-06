@@ -61,11 +61,12 @@ const Navbar = () => {
               Blog
             </Link>
           </li>
+           {/*
           <li>
             <Link to="/experience" className={location.pathname === "/experience" ? "active" : ""} onClick={closeMenu}>
               Software Engineering
             </Link>
-          </li>
+          </li>*/}
           <li>
             <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""} onClick={closeMenu}>
               Projects
